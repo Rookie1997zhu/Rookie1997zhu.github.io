@@ -1,0 +1,1 @@
+export default {content:['./index.html','./src/**/*.{vue,ts}'],theme:{extend:{colors:{ink:'#0c1731',accent:'#3669f5',muted:'#66738a',paper:'#f5f7fb'},fontFamily:{sans:['Pretendard','Inter','Noto Sans KR','Noto Sans SC','system-ui','sans-serif']}}},plugins:[]}

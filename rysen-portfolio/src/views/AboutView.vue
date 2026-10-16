@@ -1,0 +1,2 @@
+<script setup lang="ts">import {useI18n} from 'vue-i18n';const {t}=useI18n()</script>
+<template><section class="section min-h-[65vh]"><div class="wrap"><p class="eyebrow mb-6">{{t('about.eyebrow')}}</p><h1 class="section-title max-w-[820px]">{{t('about.title')}}</h1><p class="muted mt-9 text-lg leading-10 max-w-[780px]">{{t('about.body')}}</p><div class="mt-16 h-1 bg-gradient-to-r from-accent to-[#c4d3ff] max-w-[400px]"></div></div></section></template>
