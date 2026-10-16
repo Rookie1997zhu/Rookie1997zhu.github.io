@@ -45,7 +45,7 @@ npm run preview
 2. 将本项目所有文件推送到 `main` 分支。**注意必须包含 `.github/workflows/deploy.yml`**。
 3. 仓库进入 `Settings → Pages → Build and deployment`，将 Source 设置为 **GitHub Actions**。
 4. 打开 `Actions`，等待 `Deploy RYSEN Portfolio` 构建完成。
-5. 访问 `https://你的用户名.github.io/rysen-portfolio/ko/`。
+5. 用户站点仓库名必须是 `用户名.github.io`，访问 `https://你的用户名.github.io/ko/`。只打开 `https://你的用户名.github.io/` 且仓库不是这个名字时，GitHub 会显示没有 Pages 站点。
 6. 测试 `/en/`、`/zh/`、作品详情页、刷新及手机端显示。
 
 每次推送到 `main`，GitHub Actions 会自动构建和发布。不要上传 `node_modules` 或 `dist`。
