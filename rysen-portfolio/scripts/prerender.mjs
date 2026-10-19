@@ -1,7 +1,7 @@
 import fs from 'node:fs';import path from 'node:path';
 // Static route entrypoints for GitHub Pages: each URL receives a real HTML file.
 // Content is hydrated client-side; this is NOT server-side rendering.
-const dist=path.resolve('dist');const template=fs.readFileSync(path.join(dist,'index.html'),'utf8');const base=process.env.VITE_BASE_PATH||'/rysen-portfolio/';const langs=['ko','en','zh'];const pages=['','services','portfolio','about','contact',...['rysen-works','ssuker','massconnected'].map(id=>'projects/'+id)];const site=(process.env.SITE_URL||`https://YOUR_USERNAME.github.io${base}`).replace(/\/$/,'');
+const dist=path.resolve('dist');const template=fs.readFileSync(path.join(dist,'index.html'),'utf8');const base=process.env.VITE_BASE_PATH||'/rysen-portfolio/';const langs=['ko','en','zh'];const pages=['','services','portfolio','about','contact',...['rysen-works','ssuker','massconnected','odeokgu'].map(id=>'projects/'+id)];const site=(process.env.SITE_URL||`https://YOUR_USERNAME.github.io${base}`).replace(/\/$/,'');
 const labels={ko:'RYSEN | 웹사이트 제작 및 프로젝트 포트폴리오',en:'RYSEN | Web Solutions & Portfolio',zh:'RYSEN | 网站开发服务与作品集'};
 const descriptions={ko:'RYSEN의 기업 홈페이지, 맞춤형 업무 시스템, 콘텐츠 웹사이트 프로젝트를 살펴보세요.',en:'Explore corporate websites, custom business systems, and content websites by RYSEN.',zh:'了解 RYSEN 的企业官网、定制业务系统与内容管理网站项目。'};
 const entries=[];
